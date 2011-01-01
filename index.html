@@ -4,10 +4,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Peridot</title>
 	<link rel="stylesheet" href="css/peridot.css" />
+	
+	<link rel="stylesheet" href="#" title="default" />
 	<link rel="alternate stylesheet" href="css/themes/purple.css" title="Purple" />
 	<link rel="alternate stylesheet" href="css/themes/red.css" title="Red" />
 	<link rel="alternate stylesheet" href="css/themes/green.css" title="Green" />
-	<link rel="stylesheet" href="css/themes/aqua.css" title="Aqua" />
+	<link rel="alternate stylesheet" href="css/themes/aqua.css" title="Aqua" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./demo/styleswitcher.js"></script>
+  <script type="text/javascript" src="./demo/demo.js"></script>
 </head>
 <body>
 
@@ -35,113 +41,44 @@
 
   <div id="main"><div class="container_12 clearfix">
     <div class="grid_8">
-      <h2>Heading 2 <em>(h2)</em></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <h3>Heading 3 <em>(h3)</em></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>
+        Peridot is an HTML &amp; CSS template for quickly building web applications.  The design is largely influenced by the <a href="http://clickontyler.com/yui-app-theme/">YUI App Theme</a>, but the underlying code is built upon the <a href="http://960.gs/">960 Grid System</a>.  The CSS is compiled using <a href="http://sass-lang.com/">SASS</a>, which makes creating new themes very simple.
+      </p>
 
-      <h4>Heading 4 <em>(h4)</em></h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <h2>Lists</h2>
-      <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li
-      </ul>
-
-      <ol>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li
-      </ol>
-
-      <dl>
-        <dt>Lorem ipsum dolor sit amet</dt>
-        <dd>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-        <dt>Ut enim ad minim veniam</dt>
-        <dd>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
-        <dt>Duis aute irure</dt>
-        <dd>dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</dd>
-      </dl>
-
-      <h2>Forms</h2>
-      <form>
-        <div class="form-item">
-          <label for="textfield1">Text field</label>
-          <input type="text" class="text" id="textfield1" />
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        </div>
-
-        <div class="form-item">
-          <label for="textfield-large1">Large text field</label>
-          <input type="text" class="text large" id="textfield-large1" />
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        </div>
-
-        <div class="form-item">
-          <label for="textfield-short1">Short text field</label>
-          <input type="text" class="text short" id="textfield-short1" />
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        </div>
-
-        <div class="form-item">
-          <label for="textarea1">Textarea</label>
-          <textarea id="textarea1"></textarea>
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        </div>
-        
-        <div class="form-actions">
-          <input type="submit" value="Save">
-          or
-          <a href="#" class="cancel">Cancel</a>
-        </div>
-      </form>
-
-      <div class="box">
-        <div class="box-top"><h2>Form in a box</h2></div>
-        <form>
-          <div class="form-item">
-            <label for="textfield2">Text field</label>
-            <input type="text" class="text" id="textfield2" />
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-          </div>
-
-          <div class="form-item">
-            <label for="textarea2">Textarea</label>
-            <textarea id="textarea2" rows="5"></textarea>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-          </div>
-        
-          <div class="form-actions">
-            <input type="submit" value="Save">
-            or
-            <a href="#" class="cancel">Cancel</a>
-          </div>
-        </form>
-      </div>
+      <h2>Download</h2>
+      <p>
+        You can download this project in either
+        <a href="http://github.com/zroger/peridot/zipball/master">zip</a> or
+        <a href="http://github.com/zroger/peridot/tarball/master">tar</a> formats.
+        You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
+        <pre style="background: #000; color: #fff; padding: 10px;">$ git clone git://github.com/zroger/peridot</pre>
+      </p>
 
     </div>
 
     <div class="grid_4">
       <div class="box">
-        <div class="box-top">
-          <h2>Documentation</h2>
-        </div>
-        <ul class="menu-list">
-          <li><a href="./elements.html">HTML Elements</a></li>
-          <li><a href="./form.html">Forms</a></li>
-        </ul>
+        <div class="box-top"><h2>Download</h2></div>
+        <p class="download">
+          <a href="http://github.com/zroger/peridot/zipball/master">
+            <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+          <a href="http://github.com/zroger/peridot/tarball/master">
+            <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+        </p>
       </div>
 
       <div class="box">
         <div class="box-top">
-          <h2>Box w/ a top</h2>
+          <h2>Themes</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul class="menu-list">
+          <li><a href="#default" class="styleswitcher">Default (no theme)</a></li>
+          <li><a href="#Purple" class="styleswitcher">Purple</a></li>
+          <li><a href="#Red" class="styleswitcher">Red</a></li>
+          <li><a href="#Aqua" class="styleswitcher">Aqua</a></li>
+          <li><a href="#Green" class="styleswitcher">Green</a></li>
+        </ul>
       </div>
     
     </div><!-- .grid_4 -->
@@ -153,5 +90,8 @@
       &copy;2010 My Super Cool App
     </div>
   </div></div>
+
+  <a href="http://github.com/zroger/peridot"><img style="background-color: transparent; padding: 0; position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
 </body>
 </html>
