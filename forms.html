@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Peridot</title>
+	<link rel="stylesheet" href="css/peridot.css" />
+	<link rel="alternate stylesheet" href="./css/themes/purple.css" title="Purple" />
+	<link rel="alternate stylesheet" href="./css/themes/red.css" title="Red" />
+	<link rel="alternate stylesheet" href="./css/themes/green.css" title="Green" />
+	<link rel="stylesheet" href="./css/themes/aqua.css" title="Aqua" />
+
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./demo/styleswitcher.js"></script>
+  <script type="text/javascript" src="./demo/demo.js"></script>
+
+</head>
+<body>
+
+  <div id="header"><div class="container_12 clearfix">
+    <div class="grid_12">
+	    <h1>Peridot</h1>
+	  </div>
+  </div></div>
+
+  <div id="nav"><div class="container_12 clearfix">
+    <div class="grid_12">
+      <ul class="primary-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./elements.html">HTML Elements</a></li>
+        <li class="active"><a href="./forms.html">Forms</a></li>
+      </ul>
+
+      <ul class="user-nav">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div></div>
+
+  <div id="main"><div class="container_12 clearfix">
+    <div class="grid_8">
+      <h2>Forms</h2>
+      <p>Most standard form inputs have basic styling applied. Text inputs and textareas are grid-aware, meaning that they will expand to 100% of the available width of the containing grid column.  They are also box-aware, so when they are placed inside of a <a href="boxes.html">box element</a>, the width will be shortened to accommodate the additional padding of the box.</p>
+      
+      <p>Each form field should be wrapped in a <code>.form-item</code> element, and can have an optional label, validation message and description.</p>
+
+      <div class="box">
+        <div class="box-top"><h2>div.form-item</h2></div>
+        <pre class="brush:html">
+&lt;div class=&quot;form-item&quot;&gt;
+  &lt;label for=&quot;textfield1&quot;&gt;Large text field
+    &lt;span class="validation"&gt;required&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;text&quot; id=&quot;textfield1&quot; /&gt;
+  &lt;div class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet...&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+
+      <h2>Form elements</h2>
+
+      <form>
+        <div class="form-item">
+          <label for="textfield1">Text field <span class="validation">Numbers only.</span></label>
+          <input type="text" class="text" id="textfield1" />
+          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+
+        <div class="form-item">
+          <label for="textfield-large1">Large text field <span class="validation">required</span></label>
+          <input type="text" class="text large" id="textfield-large1" value="Lorem Ipsum..."/>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+
+        <div class="form-item">
+          <label for="textfield-short1">Short text field</label>
+          <input type="text" class="text short" id="textfield-short1" />
+          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+
+        <div class="form-item">
+          <label for="selectfield1">Select field</label>
+          <select id="selectfield1">
+            <option>Option #1</option>
+            <option>Option #2</option>
+            <option>Option #3</option>
+            <option>Option #4</option>
+          </select>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+
+        <div class="form-item">
+          <label for="textarea1">Textarea</label>
+          <textarea id="textarea1"></textarea>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+        
+        <div class="form-actions">
+          <input type="submit" value="Save">
+          or
+          <a href="#" class="cancel">Cancel</a>
+        </div>
+      </form>
+
+      <h2>Messages</h2>
+      
+      <div class="alert info">This is an <em>info</em> message.</div>
+      <div class="alert notice">This is a <em>notice</em> message.</div>
+      <div class="alert warning">This is a <em>warning</em> message.</div>
+      <div class="alert error">This is an <em>error</em> message.</div>
+      <br />
+      <br />
+
+      <div class="box">
+        <div class="box-top"><h2>Form in a box</h2></div>
+        <div class="alert info">
+          Notice how the field widths accommodate the additional padding of the box.
+        </div>
+        <form>
+          <div class="form-item">
+            <label for="textfield2">Text field</label>
+            <input type="text" class="text" id="textfield2" />
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+
+          <div class="form-item">
+            <label for="textarea2">Textarea</label>
+            <textarea id="textarea2" rows="5"></textarea>
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+        
+          <div class="form-actions">
+            <input type="submit" value="Save">
+            or
+            <a href="#" class="cancel">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="grid_4">
+      <div class="box">
+        <div class="box-top">
+          <h2>Documentation</h2>
+        </div>
+        <ul class="menu-list">
+          <li><a href="./elements.html">HTML Elements</a></li>
+          <li><a href="./form.html">Forms</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-top">
+          <h2>Themes</h2>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#Purple" class="styleswitcher">Purple</a></li>
+          <li><a href="#Red" class="styleswitcher">Red</a></li>
+          <li><a href="#Aqua" class="styleswitcher">Aqua</a></li>
+          <li><a href="#Green" class="styleswitcher">Green</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-top">
+          <h2>Form in the sidebar</h2>
+        </div>
+        <form>
+          <div class="form-item">
+            <label for="textfield3">Text field</label>
+            <input type="text" class="text" id="textfield3" />
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+
+          <div class="form-item">
+            <label for="textfield-short3">Short text field</label>
+            <input type="text" class="text short" id="textfield-short3" />
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+
+          <div class="form-item">
+            <label for="textarea3">Textarea</label>
+            <textarea id="textarea3"></textarea>
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          </div>
+        
+          <div class="form-actions">
+            <input type="submit" value="Save">
+            or
+            <a href="#" class="cancel">Cancel</a>
+          </div>
+        </form>
+      </div>
+
+    </div><!-- .grid_4 -->
+
+  </div></div>
+
+  <div id="footer"><div class="container_12 clearfix">
+    <div class="grid_12">
+      &copy;2010 My Super Cool App
+    </div>
+  </div></div>
+
+  <script type="text/javascript">
+    SyntaxHighlighter.all();
+  </script>
+
+</body>
+</html>

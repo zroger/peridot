@@ -1,0 +1,23 @@
+body { background: #f8f8f8; }
+
+a, a:link, a:visited, a:hover, a:active { color: #7a1818; }
+
+#header { background: #7a1818; }
+
+#header h1 { color: #fff; }
+
+#nav { background: #000; }
+
+#nav li a { color: #fff; }
+
+#nav li.active a { color: #000; background: #f8f8f8; }
+
+#footer { color: #777; }
+
+.box { background: #fff; }
+
+.box-top { background: #7a1818; border-bottom-color: #000; }
+
+.box-top h2 { color: #fff; }
+
+thead th { background: #7a1818; border-bottom-color: #000; color: #fff; }

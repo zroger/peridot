@@ -1,0 +1,323 @@
+em { font-style: italic; }
+strong { font-weight: bold; }
+del { text-decoration: line-through; }
+acronym, abbr { border-bottom: dotted 1px; }
+
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  margin-left: 10px;
+}
+
+img {
+  background: #fff;
+  border: solid 1px #777;
+  padding: 4px;
+}
+img.img-left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: .5em;
+}
+img.img-right {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: .5em;
+}
+
+table {
+  margin-bottom: 2em;
+  width: 100%;
+}
+th, td {
+  padding: .5em 10px;
+  text-align: left;
+}
+thead th {
+  border-bottom: solid 3px #000;
+  font-weight: normal;
+}
+tbody tr {
+  border-bottom: solid 1px #bbb;
+}
+
+blockquote {
+  background: #fff;
+  border: solid 1px #bbb;
+  color: #444;
+  font-size: 1.25em;
+  font-style: italic;
+  margin-bottom: 2em;
+  padding: 1em 19px;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+}
+
+/**
+ * Simple box structure to be used any where in the layout. Optionally include
+ * a .box-top container for a styled header.
+ *
+ * <div class="box">
+ *   <div class="box-top"><!-- Optional -->
+ *     <h2>Box Title</h2>
+ *   </div>
+ *   <p>lorem ipsum...</p>
+ * </div>
+ */
+.box {
+  margin-bottom: 2em;
+  padding: 10px;
+}
+.box-top {
+  border-bottom: solid 2px #000;
+  padding: 5px 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 1em;
+  margin-top: -1em;
+}
+.box-top h2 {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+.box > *:last-child {
+  margin-bottom: 0;
+}
+
+form {
+  margin-bottom: 2em;
+}
+.box form {
+  margin-bottom: 0;
+}
+
+.form-item {
+  margin-bottom: 1em;
+}
+
+.form-item label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-item .text,
+.form-item textarea,
+.form-item select {
+  border: solid 1px #bbb;
+  color: #555;
+  padding: 4px;
+}
+.form-item .text:focus,
+.form-item textarea:focus,
+.form-item select:focus {
+  border-color: #000;
+  color: #000;
+}
+
+.form-item input.large,
+.form-item textarea.large {
+  font-size: 2em;
+}
+
+.form-item .validation {
+  color: #b00;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: normal;
+}
+/**
+ * Form elements are 10px less wide than the grid_X container to accommodate
+ * for the padding and border.
+ */
+.container_12 .grid_1 .text,
+.container_12 .grid_1 textarea {
+  width: 50px
+}
+.container_12 .grid_2 .text,
+.container_12 .grid_2 textarea {
+  width: 130px
+}
+.container_12 .grid_3 .text,
+.container_12 .grid_3 textarea {
+  width: 210px
+}
+.container_12 .grid_4 .text,
+.container_12 .grid_4 textarea {
+  width: 290px
+}
+.container_12 .grid_5 .text,
+.container_12 .grid_5 textarea {
+  width: 370px
+}
+.container_12 .grid_6 .text,
+.container_12 .grid_6 textarea {
+  width: 450px
+}
+.container_12 .grid_7 .text,
+.container_12 .grid_7 textarea {
+  width: 530px
+}
+.container_12 .grid_8 .text,
+.container_12 .grid_8 textarea {
+  width: 610px
+}
+.container_12 .grid_9 .text,
+.container_12 .grid_9 textarea {
+  width: 690px
+}
+.container_12 .grid_10 .text,
+.container_12 .grid_10 textarea {
+  width: 770px
+}
+.container_12 .grid_11 .text,
+.container_12 .grid_11 textarea {
+  width: 850px
+}
+.container_12 .grid_12 .text,
+.container_12 .grid_12 textarea {
+  width: 930px
+}
+
+/**
+ * Form elements inside a .box are 40px less wide than the grid_X container to
+ * accommodate for the padding and border.
+ */
+.container_12 .grid_1 .box .text,
+.container_12 .grid_1 .box textarea {
+  width: 30px
+}
+.container_12 .grid_2 .box .text,
+.container_12 .grid_2 .box textarea {
+  width: 110px
+}
+.container_12 .grid_3 .box .text,
+.container_12 .grid_3 .box textarea {
+  width: 190px
+}
+.container_12 .grid_4 .box .text,
+.container_12 .grid_4 .box textarea {
+  width: 270px
+}
+.container_12 .grid_5 .box .text,
+.container_12 .grid_5 .box textarea {
+  width: 350px
+}
+.container_12 .grid_6 .box .text,
+.container_12 .grid_6 .box textarea {
+  width: 430px
+}
+.container_12 .grid_7 .box .text,
+.container_12 .grid_7 .box textarea {
+  width: 510px
+}
+.container_12 .grid_8 .box .text,
+.container_12 .grid_8 .box textarea {
+  width: 590px
+}
+.container_12 .grid_9 .box .text,
+.container_12 .grid_9 .box textarea {
+  width: 670px
+}
+.container_12 .grid_10 .box .text,
+.container_12 .grid_10 .box textarea {
+  width: 750px
+}
+.container_12 .grid_11 .box .text,
+.container_12 .grid_11 .box textarea {
+  width: 830px
+}
+.container_12 .grid_12 .box .text,
+.container_12 .grid_12 .box textarea {
+  width: 910px
+}
+
+/**
+ * Form elements are 10px less wide than the grid_X container to accommodate
+ * for the padding and border.
+ */
+.container_12 .grid_1 input.short,
+.container_12 .grid_1 textarea.short {
+  width: 30px
+}
+.container_12 .grid_2 input.short,
+.container_12 .grid_2 textarea.short {
+  width: 70px
+}
+.container_12 .grid_3 input.short,
+.container_12 .grid_3 textarea.short {
+  width: 110px
+}
+.container_12 .grid_4 input.short,
+.container_12 .grid_4 textarea.short {
+  width: 150px
+}
+.container_12 .grid_5 input.short,
+.container_12 .grid_5 textarea.short {
+  width: 190px
+}
+.container_12 .grid_6 input.short,
+.container_12 .grid_6 textarea.short {
+  width: 230px
+}
+.container_12 .grid_7 input.short,
+.container_12 .grid_7 textarea.short {
+  width: 270px
+}
+.container_12 .grid_8 input.short,
+.container_12 .grid_8 textarea.short {
+  width: 310px
+}
+.container_12 .grid_9 input.short,
+.container_12 .grid_9 textarea.short {
+  width: 350px
+}
+.container_12 .grid_10 input.short,
+.container_12 .grid_10 textarea.short {
+  width: 390px
+}
+.container_12 .grid_11 input.short,
+.container_12 .grid_11 textarea.short {
+  width: 430px
+}
+.container_12 .grid_12 input.short,
+.container_12 .grid_12 textarea.short {
+  width: 470px
+}
+
+.form-item .description {
+  color: #777;
+  font-size: 11px;
+  font-style: italic;
+  /* Italic letters extend too far to the left. */
+  padding-left: 3px;
+}
+
+.alert {
+  border: solid 2px;
+  margin-bottom: 1em;
+  padding: 0.5em 8px;
+}
+.error {
+  background-color: #F7E1E1;
+  border-color: #F3ABAB;
+  color: #8D0D0D;
+}
+.warning {
+  background-color: #F2F4C3;
+  border-color: #D7E059;
+  color: #6C6600;
+}
+.notice {
+  background-color: #DEEAD3;
+  border-color: #A6D877;
+  color: #336801;
+}
+.info {
+  background-color: #E5F4FF;
+  border-color: #9FD1F5;
+  color: #005898;
+}
